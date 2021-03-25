@@ -1,0 +1,21 @@
+{% extends 'main/block.html' %}
+
+{% block title%}
+    Тест
+{% endblock %}
+
+{% block content%}
+    <div class="cont">
+        <h1>Тест</h1>
+        <p>Вопрос 1?</p>
+        <div class="btn">
+            <a href="{% url 'test' %}">Вариант 1</a>
+        </div>
+        <div class="btn">
+            <a href="{% url 'test' %}">Вариант 2</a>
+        </div>
+        <div class="btn">
+            <a href="{% url 'test' %}">Вариант 3</a>
+        </div>
+    </div>
+{% endblock %}
