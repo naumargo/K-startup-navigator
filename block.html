@@ -1,0 +1,33 @@
+{% load static %}
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title%}{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'main/css/main.css' %}">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"/>
+</head>
+<body class="body1">
+    <aside>
+        <a href="{% url 'home' %}" class="stars">
+            <h5>Stars+</h5>
+        </a>
+        <hr>
+        <ul>
+            <a href="{% url 'home' %}"><li><i class="fas fa-home"></i> Главная</li></a>
+            <a href="{% url 'section1' %}"><li><i class="fas fa-shield-alt"></i> Государственная регистрация</li></a>
+            <a href="{% url 'section2' %}"><li><i class="fas fa-hand-holding-usd"></i> Налоги</li></a>
+            <a href="{% url 'section3' %}"><li><i class="fas fa-hammer"></i> Трудовые отношения</li></a>
+            <a href="{% url 'section4' %}"><li><i class="fas fa-handshake"></i> Договорные отношения</li></a>
+            <a href="{% url 'section5' %}"><li><i class="fas fa-laptop-code"></i> Создание сайта</li></a>
+            <a href="{% url 'section6' %}"><li><i class="fas fa-seedling"></i> Мой продукт</li></a>
+            <a href="{% url 'section7' %}"><li><i class="fas fa-balance-scale"></i> Правовая основа моей деятелньости</li></a>
+        </ul>
+    </aside>
+    <main>
+        {% block content%}{% endblock %}
+    </main>
+</body>
+</html>
