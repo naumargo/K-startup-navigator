@@ -1,0 +1,90 @@
+main .cont {
+    float: left;
+    margin-top: 100px;
+    text-align: center;
+    width: 70%;
+    align-items: center;
+}
+
+main .cont h1 {
+    font-size: 30px;
+}
+
+main .cont p {
+    max-width: 400px;
+    margin: 20px auto;
+}
+
+aside h5 {
+    font-size: 50px;
+    margin-top: 5px;
+    font-weight: bold;
+    font-family: Beirut;
+}
+
+.body1 {
+    background: ghostwhite;
+}
+
+aside {
+    float: left;
+    background: #0e476d;
+    width: 20%;
+    padding: 2.5%;
+    height: 100vh;
+    color: ghostwhite;
+    border-right: 5px solid #051c28;
+    font-size: 18px;
+    font-family: Arial;
+}
+
+aside .stars {
+    text-decoration: none!important;
+    color: ghostwhite;
+    display: block;
+    transition: transform .6s ease;
+}
+
+aside .stars:hover {
+    color: lightsteelblue;
+    transform: scale(1.05);
+}
+
+aside hr {
+    display: block;
+    margin-left: -15px;
+    margin-right: -15px;
+    background: ghostwhite;
+}
+
+aside ul {list-style: none}
+
+aside ul li {
+    color: ghostwhite;
+    display: block;
+    margin-left: -40px;
+    margin-bottom: 15px;
+    margin-top: 30px;
+    transition: transform .4s ease;
+}
+
+aside ul li:hover, aside ul a:hover {
+    color: lightsteelblue;
+    text-decoration: none;
+    transform: scale(1.1);
+}
+
+main .btn {
+    background: #0e476d;
+    display: block;
+    width: 150px;
+    transition: transform .6s ease;
+    font-size: 20px;
+    margin: 20px auto;
+}
+
+main div div a, .btn:hover {
+    color: ghostwhite;
+    text-decoration: none;
+    transform: scale(1.05);
+}
