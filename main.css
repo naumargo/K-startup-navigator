@@ -114,3 +114,26 @@ main .container {
     width: 70%;
     align-items: center;
 }
+
+    .container {
+        display: block;
+        flex: 1;
+        margin-bottom:20px;
+    }
+
+    .btn-primary {
+    color: #fff;
+    background-color: #6A5ACD;
+    border-color: #6A5ACD;
+    }
+
+    .col-md-8 {
+      padding-left:0;
+    }
+
+    @media (min-width: 992px)
+    .col-lg-15 {
+    -ms-flex: 0 0 33.333333%;
+    flex: 0 0 33.333333%;
+    max-width: 50%;
+}
