@@ -1,0 +1,81 @@
+{% extends 'main/block.html' %}
+
+{% block title%}
+    Раздел 2
+{% endblock %}
+
+{% block content%}
+    <div class="cont">
+        <h1>Налоги</h1>
+        <p>Просто текст</p>
+    </div>
+    <div class="row row-cols-1 row-cols-md-3 mb-3 text-center cont2">
+        <div class="col">
+            <div class="card mb-4 rounded-3 shadow-sm border2">
+                <div class="card-body">
+                    <h2 class="card-title pricing-card-title">ООО</h2>
+                    <ul class="list-unstyled mt-3 mb-4">
+                        <a href="#okno1">
+                            <li>Налоги и страховые взносы с зарплаты работников</li>
+                        </a>
+                        <a href="#okno2">
+                            <li>Налоги в зависимости от выбранной системы налогообложения</li>
+                        </a>
+                        <a href="#okno3">
+                            <li>Дополнительные налоги и платежи </li>
+                        </a>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card mb-4 rounded-3 shadow-sm border2">
+                <div class="card-body">
+                    <h2 class="card-title pricing-card-title">ИП</h2>
+                    <ul class="list-unstyled mt-3 mb-4">
+                        <a href="#okno4">
+                            <li>Фиксированные страховые взносы «за себя»</li>
+                        </a>
+                        <a href="#okno5">
+                            <li>Налоги и страховые взносы с зарплаты работников</li>
+                        </a>
+                        <a href="#okno6">
+                            <li>Налоги в зависимости от выбранной системы налогообложения</li>
+                        </a>
+                        <a href="#okno7">
+                            <li>Дополнительные налоги и платежи </li>
+                        </a>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card mb-4 rounded-3 shadow-sm border2">
+                <div class="card-body">
+                    <h2 class="card-title pricing-card-title">Самозанятый</h2>
+                    <ul class="list-unstyled mt-3 mb-4">
+                        <a href="#okno8">
+                            <li>Налоги в зависимости от выбранной системы налогообложения</li>
+                        </a>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="okno1" class="oko">
+        <a href="#">
+            <i class="bi bi-x">Закрыть</i>
+        </a>
+        <div>
+            <h2>Налоги и страховые взносы с зарплаты работников</h2>
+            <p><br>Каждый работодатель обязан исчислять и удерживать налог на доходы физических лиц (НДФЛ), платить страховые взносы за своих работников.<br>
+            Один раз по итогам каждого месяца (на следующий день после выплаты зарплаты) работодатель обязан перечислять НДФЛ в бюджет. Налоговая ставка для расчета НДФЛ составляет 13%.<br>
+            Также доход сотрудника облагается страховыми взносами. Их платят в ФНС и ФСС (Фонд социального страхования). Отчисления за работников ООО делает не позднее 15 числа каждого месяца, исходя из размеров установленных тарифов.<br>
+            Платить взносы нужно по следующим тарифам:<br>
+            На пенсионное страхование (ОПС) – 22%.<br>
+            На социальное страхование (ОСС) – 2,9%.<br>
+            На медицинское страхование (ОМС) – 5,1%.</p>
+        </div>
+    </div>
+
+{% endblock %}
