@@ -137,3 +137,49 @@ main .container {
     flex: 0 0 33.333333%;
     max-width: 50%;
 }
+
+main .oko {
+    width: 70%;
+    height: min-content;
+    padding: 15px;
+    border: 3px solid #051c28;
+    border-radius: 10px;
+    color: #051c28;
+    display: none;
+    position: absolute;
+    top: 100px;
+    right: 0;
+    bottom: 0;
+    left: 308px;
+    align-items: center;
+    align-content: center;
+    background: ghostwhite;
+    font-size: 20px;
+}
+main .oko:target {display: block;}
+
+main .col {
+    background: ghostwhite;
+    color: #051c28;
+}
+
+main .border2{
+    border: 2px solid #0e476d;
+    text-align: left;
+}
+
+
+ main ul li {
+     color: #051c28;
+     list-style: square inside;
+     font-size: 18px;
+     display: block;
+ }
+
+ main ul li:hover {
+    color: crimson;
+}
+
+main ul a:hover {
+    text-decoration: none;
+}
