@@ -129,10 +129,6 @@
          display: block;
      }
 
-     main ul li:hover {
-        color: crimson;
-    }
-
     main ul a:hover {
         text-decoration: none;
     }
