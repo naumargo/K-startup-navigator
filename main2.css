@@ -1,199 +1,270 @@
-main .cont {
-    float: left;
-    margin-top: 50px;
-    text-align: center;
-    width: 70%;
-    align-items: center;
-    margin-left: 60px;
-}
+    main .cont {
+        float: left;
+        margin-top: 50px;
+        text-align: center;
+        width: 70%;
+        align-items: center;
+        margin-left: 70px;
 
-main .cont2 {
-    float: left;
-    margin-top: 50px;
-    width: 75%;
-    margin-left: 40px;
-}
+    }
 
-main .cont h1 {
-    font-size: 30px;
-}
+    main .cont2 {
+        float: left;
+        margin-top: 30px;
+        width: 75%;
+        margin-left: 40px;
+    }
 
-main .cont p {
-    max-width: 500px;
-    margin: 20px auto;
-    font-family: Arial;
-}
+    main .cont h1 {
+            margin-top: 0px;
+        font-size: 40px;
+    }
 
-aside h5 {
-    font-size: 50px;
-    margin-top: 5px;
-    font-weight: bold;
-    font-family: Beirut;
-}
+    main .cont p {
+        max-width: 500px;
+        margin: 20px auto;
+        font-family: Arial;
+    }
 
-.body1 {
-    background: ghostwhite;
-}
+    aside h5 {
+        font-size: 50px;
+        margin-top: 5px;
+        font-weight: bold;
+        font-family: Beirut;
+    }
 
-aside {
-    float: left;
-    background: #0e476d;
-    width: 20%;
-    padding: 2.5%;
-    height: 1000px;
-    color: ghostwhite;
-    border-right: 5px solid #051c28;
-    font-size: 18px;
-    font-family: Arial;
-}
+    .body1 {
+        background: #fff;
 
-aside .stars {
-    text-decoration: none!important;
-    color: ghostwhite;
-    display: block;
-    transition: transform .6s ease;
-}
+    }
 
-aside .stars:hover {
-    color: lightsteelblue;
-    transform: scale(1.05);
-}
+    aside {
+        float: left;
+        background: #0e476d;
+        width: 20%;
+        padding: 2.5%;
+        height: 100vh;
+        color: ghostwhite;
+        border-right: 5px solid #051c28;
+        font-size: 18px;
+        font-family: Arial;
+    }
 
-aside hr {
-    display: block;
-    margin-left: -15px;
-    margin-right: -15px;
-    background: ghostwhite;
-}
+    aside .stars {
+        text-decoration: none!important;
+        color: ghostwhite;
+        display: block;
+        transition: transform .6s ease;
+    }
 
-aside ul {list-style: none}
+    aside .stars:hover {
+        color: lightsteelblue;
+        transform: scale(1.05);
+    }
 
-aside ul li {
-    color: ghostwhite;
-    display: block;
-    margin-left: -40px;
-    margin-bottom: 15px;
-    margin-top: 30px;
-    transition: transform .4s ease;
-}
+    aside hr {
+        display: block;
+        margin-left: -15px;
+        margin-right: -15px;
+        background: #fff;
+    }
 
-aside ul li:hover, aside ul a:hover {
-    color: #eaedfe;
-    text-decoration: none;
-    transform: scale(1.1);
-}
+    aside ul {list-style: none}
 
+    aside ul li {
+        color: ghostwhite;
+        display: block;
+        margin-left: -40px;
+        margin-bottom: 15px;
+        margin-top: 30px;
+        transition: transform .4s ease;
+    }
 
-
-main div div a, .btn:hover {
-    color: ghostwhite;
-    text-decoration: none;
-    transform: scale(1.05);
-}
-
-.bg-primary-light {
-    background-color: #eaedfe;
-}
-
-.icon-rounded {
-    display: inline-block;
-    width: 4rem;
-    height: 4rem;
-    border-radius: 50%;
-    text-align: center;
-    line-height: 4.5rem;
-}
-
-.mb-3, .my-3 {
-    margin-bottom: 1rem !important;
-}
-
-main .col {
-    background: ghostwhite;
-    color: #051c28;
-}
-
-main .border2{
-    border: 2px solid #0e476d;
-    text-align: left;
-}
+    aside ul li:hover, aside ul a:hover {
+        color: #eaedfe;
+        text-decoration: none;
+        transform: scale(1.1);
+    }
 
 
- main ul li {
-     color: #051c28;
-     list-style: square inside;
-     font-size: 18px;
-     display: block;
- }
 
- main ul li:hover {
-    color: crimson;
-}
+    main div div a, .btn:hover {
+        color: ghostwhite;
+        text-decoration: none;
+        transform: scale(1.05);
+    }
 
-main ul a:hover {
-    text-decoration: none;
-}
+    .bg-primary-light {
+        background-color: #eaedfe;
+    }
 
-main .oko {
-    width: 70%;
-    height: min-content;
-    padding: 15px;
-    border: 3px solid #051c28;
-    border-radius: 10px;
-    color: #051c28;
-    display: none;
+    .icon-rounded {
+        display: inline-block;
+        width: 4rem;
+        height: 4rem;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 4.5rem;
+    }
+
+    .mb-3, .my-3 {
+        margin-bottom: 1rem !important;
+    }
+
+    main .col {
+        background: ghostwhite;
+        color: #051c28;
+    }
+
+    main .border2{
+        border: 2px solid #0e476d;
+        text-align: left;
+    }
+
+
+     main ul li {
+         color: #000;
+         list-style: square inside;
+         font-size: 18px;
+         display: block;
+     }
+
+     main ul li:hover {
+        color: crimson;
+    }
+
+    main ul a:hover {
+        text-decoration: none;
+    }
+
+    main .oko {
+
+        width: 70%;
+        height: min-content;
+        padding: 15px;
+        border: 3px solid #051c28;
+        border-radius: 10px;
+        color: #051c28;
+        display: none;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        bottom: 10%;
+        left: 400px;
+        align-items: center;
+        align-content: center;
+        background: #fff;
+        font-size: 20px;
+
+    }
+    main .oko:target {display: block;}
+    main .close {
+        display: block;
+        border: 1px solid #051c28;
+        color: #051c28;
+        padding: 0 12px;
+        text-decoration: none;
+        font-size: 15px;
+        cursor: pointer;
+        border-radius: 10px;
+    }
+
+
+    main .close-reveal-modal {
+    font-size: 22px;
+    line-height: .5;
     position: absolute;
-    top: 100px;
-    right: 0;
-    bottom: 0;
-    left: 308px;
-    align-items: center;
-    align-content: center;
-    background: ghostwhite;
-    font-size: 20px;
-}
-main .oko:target {display: block;}
-main .close {
-    display: block;
-    border: 1px solid #051c28;
-    color: #051c28;
-    padding: 0 12px;
-    text-decoration: none;
-    font-size: 15px;
+    top: 8px;
+    right: 11px;
+    color: #aaa;
+    text-shadow: 0 -1px 1px rbga(0,0,0,.6);
+    font-weight: bold;
     cursor: pointer;
-    border-radius: 10px;
 }
-main .close:hover {color: crimson;}
-
-main .container {
-    margin-top: -20px;
-    float: left;
-    margin-left: 30px;
-    width: 70%;
-    align-items: center;
-    display: block;
-    flex: 1;
-    margin-bottom:20px;
+.reveal-modal-bg {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background: #000;
+    background: rgba(0,0,0,.8);
+    z-index: 100;
+    display: none;
+    top: 0;
+    left: 0;
 }
 
-.points {
-    display: block;
-    width: 1200px;
-}
+    main .container {
+        margin-top: 50px;
+        float: left;
+        margin-left: 85px;
+        width: 70%;
+        align-items: center;
+        display: block;
+        flex: 1;
+        margin-bottom:20px;
+    }
 
-.container {
-    display: block;
-    flex: 1;
-    margin-bottom:20px;
-}
+    .points {
+        display: block;
+        width: 1200px;
+    }
 
-.btn-primary {
-    color: #fff;
-    background-color: #6A5ACD;
-    border-color: #6A5ACD;
-    text-align: center;
-}
+    .container {
+        display: block;
+        flex: 1;
+        margin-bottom:20px;
+    }
 
-.col-md-8 {
-    padding-left:0;
-}
+    .btn-primary {
+        color: #fff;
+        background-color: #6A5ACD;
+        border-color: #6A5ACD;
+        text-align: center;
+    }
+
+    .col-md-8 {
+        padding-left:0;
+    }
+
+    li {
+     display: block;
+     transition-duration: 0.5s;
+       color:#000;
+    }
+
+    li:hover {
+      cursor: pointer;
+       color:#000;
+    }
+
+    ul li ul {
+      visibility: hidden;
+      opacity: 0;
+      position: absolute;
+      transition: all 0.5s ease;
+      margin-top: 1rem;
+      left: 0;
+
+      display: none;
+       color:#000;
+    }
+
+    ul li:hover > ul,
+    ul li ul:hover {
+      visibility: visible;
+      opacity: 1;
+      display: block;
+         color:#000;
+    }
+
+    ul li ul li {
+      clear: both;
+      width: 100%;
+        color:#000;
+    }
+
+    main div div a, .btn:hover {
+        color: #000;
+        text-decoration: none;
+        transform: scale(1.05);
+    }
