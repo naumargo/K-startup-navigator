@@ -1,92 +1,261 @@
-    main .cont {
+ /* для главной страницы */
+
+   .bg-light, p-5, rounded{
+         width:1000px;
+         padding:0;
+         margin-top: 150px;
+         margin-bottom: 10px;
+         margin-left:-20px;
+ }
+   .container{
+        display: block;
+        margin-top: 10px;
         float: left;
-        margin-top: 50px;
+        margin-left:-10px;
+        display: block;
+        flex: 1;
+        position:relative;
+        left:0px;
+        width:1000px;
+        align:center;
+    }
+
+    .btn-primary {
+        color: #fff;
+        background-color: #6A5ACD;
+        border-color: #6A5ACD;
         text-align: center;
-        width: 70%;
-        align-items: center;
-        margin-left: 70px;
-
     }
 
-    main .cont2 {
-        float: left;
-        margin-top: 30px;
-        width: 75%;
-        margin-left: 40px;
+    .h5stars{
+        font-size:50px;
     }
 
-    main .cont h1 {
-        margin-top: -10px;
-        font-size: 40px;
-    }
-
-    main .cont p {
-        max-width: 500px;
-        margin: 20px auto;
-        font-family: Arial;
-    }
-
-    aside h5 {
-        font-size: 50px;
-        margin-top: 5px;
-        font-weight: bold;
-        font-family: Beirut;
-    }
-
-    .body1 {
-        background: #fff;
-
-    }
-
-    aside {
-        float: left;
-        background: #0e476d;
-        width: 20%;
-        padding: 2.5%;
-        height: 100vh;
-        color: ghostwhite;
-        border-right: 5px solid #051c28;
-        font-size: 18px;
-        font-family: Arial;
-    }
-
-    aside .stars {
-        text-decoration: none!important;
-        color: ghostwhite;
-        display: block;
-        transition: transform .6s ease;
-    }
-
-    aside .stars:hover {
-        color: lightsteelblue;
-        transform: scale(1.05);
-    }
-
-    aside hr {
-        display: block;
-        margin-left: -15px;
-        margin-right: -15px;
-        background: #fff;
-    }
-
-    aside ul {list-style: none}
-
-    aside ul li {
-        color: ghostwhite;
-        display: block;
-        margin-left: -40px;
-        margin-bottom: 15px;
-        margin-top: 30px;
-        transition: transform .4s ease;
-    }
-
-    aside ul li:hover, aside ul a:hover {
-        color: #eaedfe;
+    .stars {
+        color: #dadada;
         text-decoration: none;
-        transform: scale(1.1);
+        text-transform: uppercase;
+        align: right;
     }
 
 
+#для главного меню
+
+   .nav-toggle {
+        position: absolute;
+        left: 200px;
+        padding: 1em;
+        background: inherit;
+        color: #dadada;
+        cursor: pointer;
+        font-size: 1.2em;
+        line-height: 1;
+        z-index: 2001;
+        -webkit-transition: color .25s ease-in-out;
+        -moz-transition: color .25s ease-in-out;
+        transition: color .25s ease-in-out;
+    }
+
+    .nav-toggle:after {
+        content: '\2630';
+        text-decoration: none;
+        font-size:50px;
+        margin-top:100px;
+    }
+
+    .nav-toggle:hover {
+        color: #f4f4f4;
+    }
+
+
+    [id='nav-toggle'] {
+        position: absolute;
+        display: none;
+    }
+
+/* для моб устройств */
+
+    [id='nav-toggle']:checked ~ .nav > .nav-toggle {
+        left: auto;
+        right: 2px;
+        top: 1em;
+    }
+
+
+    [id='nav-toggle']:checked ~ .nav {
+        left: 0;
+        box-shadow:4px 0px 20px 0px rgba(0,0,0, 0.5);
+        -moz-box-shadow:4px 0px 20px 0px rgba(0,0,0, 0.5);
+        -webkit-box-shadow:4px 0px 20px 0px rgba(0,0,0, 0.5);
+        overflow-y: visible;
+    }
+
+    @media screen and (min-width: 320px) {
+    html,
+    body {
+      margin: 0;
+      overflow-x: hidden;
+    }
+}
+
+    @media screen and (max-width: 320px) {
+        html,
+        body {
+          margin: 0;
+          overflow-x: hidden;
+        }
+       .nav {
+          width: 100%;
+          box-shadow: none
+        }
+    }
+
+/* смещение контента страницы */
+
+    [id='nav-toggle']:checked ~ main > article {
+        -webkit-transform: translateX(320px);
+        -moz-transform: translateX(320px);
+        transform: translateX(320px);
+    }
+
+    [id='nav-toggle']:checked ~ .nav > .nav-toggle:after {
+        content: '\2715';
+    }
+
+    .nav > ul {
+        display: block;
+        position: relative;
+        margin: 0;
+        padding: 30px;
+        margin-top:120px;
+        list-style: none;
+    }
+
+    .nav > ul > li {
+        line-height: 2.5;
+        opacity: 0;
+        -webkit-transform: translateX(-50%);
+        -moz-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        transform: translateX(-50%);
+        -webkit-transition: opacity .5s .1s, -webkit-transform .5s .1s;
+        -moz-transition: opacity .5s .1s, -moz-transform .5s .1s;
+        -ms-transition: opacity .5s .1s, -ms-transform .5s .1s;
+        transition: opacity .5s .1s, transform .5s .1s;
+    }
+
+    [id='nav-toggle']:checked ~ .nav > ul > li {
+        opacity: 1;
+        -webkit-transform: translateX(0);
+        -moz-transform: translateX(0);
+        -ms-transform: translateX(0);
+        transform: translateX(0);
+    }
+
+/* определяем интервалы появления пунктов меню */
+
+    .nav > ul > li:nth-child(2) {
+        -webkit-transition: opacity .5s .2s, -webkit-transform .5s .2s;
+        transition: opacity .5s .2s, transform .5s .2s;
+    }
+
+    .nav > ul > li:nth-child(3) {
+        -webkit-transition: opacity .5s .3s, -webkit-transform .5s .3s;
+        transition: opacity .5s .3s, transform .5s .3s;
+    }
+
+    .nav > ul > li:nth-child(4) {
+        -webkit-transition: opacity .5s .4s, -webkit-transform .5s .4s;
+        transition: opacity .5s .4s, transform .5s .4s;
+    }
+
+    .nav > ul > li:nth-child(5) {
+        -webkit-transition: opacity .5s .5s, -webkit-transform .5s .5s;
+        transition: opacity .5s .5s, transform .5s .5s;
+    }
+
+    .nav > ul > li:nth-child(6) {
+        -webkit-transition: opacity .5s .6s, -webkit-transform .5s .6s;
+        transition: opacity .5s .6s, transform .5s .6s;
+    }
+
+    .nav > ul > li:nth-child(7) {
+        -webkit-transition: opacity .5s .7s, -webkit-transform .5s .7s;
+        transition: opacity .5s .7s, transform .5s .7s;
+    }
+
+    .nav > ul > li > a {
+        display: inline-block;
+        position: relative;
+        padding: 0;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 300;
+        font-size: 1.2em;
+        color: #000;
+        width: 100%;
+        text-decoration: none;
+        /* плавный переход */
+        -webkit-transition: color .5s ease, padding .5s ease;
+        -moz-transition: color .5s ease, padding .5s ease;
+        transition: color .5s ease, padding .5s ease;
+    }
+
+    .nav > ul > li > a:hover,
+    .nav > ul > li > a:focus {
+        color: white;
+        padding-left: 15px;
+    }
+
+    .nav > ul > li > a:before {
+        content: '';
+        display: block;
+        position: absolute;
+        right: 0;
+
+        bottom: 0;
+        height: 1px;
+        width: 100%;
+        -webkit-transition: width 0s ease;
+        transition: width 0s ease;
+    }
+
+    .nav > ul > li > a:after {
+        content: '';
+        display: block;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        height: 1px;
+        color: #000;
+        width: 100%;
+        background: #3bc1a0;
+        -webkit-transition: width .5s ease;
+        transition: width .5s ease;
+    }
+
+    .nav > ul > li > a:hover:before {
+        width: 0%;
+        background: #3bc1a0;
+        -webkit-transition: width .5s ease;
+        transition: width .5s ease;
+    }
+
+    .nav > ul > li > a:hover:after {
+        width: 0%;
+        background: transparent;
+        -webkit-transition: width 0s ease;
+        transition: width 0s ease;
+    }
+
+
+    [id='nav-toggle']:checked ~ .mask-content {
+        visibility: visible;
+        opacity: 1;
+        -webkit-transition: opacity .5s, visibility .5s;
+        transition: opacity .5s, visibility .5s;
+    }
+
+/* для кружочков на главной странице */
 
     main div div a, .btn:hover {
         color: ghostwhite;
@@ -107,38 +276,28 @@
         line-height: 4.5rem;
     }
 
-    .mb-3, .my-3 {
-        margin-bottom: 1rem !important;
+/* для налогов и гос рег */
+
+    .container1 {
+         width:1000px;
+         padding:0;
+         margin-top: 150px;
+         margin-bottom: 10px;
+         margin-left:0px;
+         align:center;
     }
 
-    main .col {
-        background: ghostwhite;
-        color: #051c28;
-    }
-
-    main .border2{
-        border: 2px solid #0e476d;
-        text-align: left;
-    }
-
-
-     main ul li {
-         color: #000;
-         list-style: square inside;
-         font-size: 18px;
-         display: block;
-     }
-
-    main ul a:hover {
+    ul a:hover {
         text-decoration: none;
     }
 
-    main .oko {
+/* для окошек */
 
+    .oko {
         width: 70%;
         height: min-content;
-        padding: 15px;
-        border: 3px solid #051c28;
+        padding: 30px;
+        margin:20px;
         border-radius: 10px;
         color: #051c28;
         display: none;
@@ -146,15 +305,14 @@
         top: 100%;
         right: 0;
         bottom: 10%;
-        left: 400px;
+        left: 350px;
         align-items: center;
         align-content: center;
         background: #fff;
         font-size: 20px;
-
     }
-    main .oko:target {display: block;}
-    main .close {
+    .oko:target {display: block; }
+    .close {
         display: block;
         border: 1px solid #051c28;
         color: #051c28;
@@ -165,102 +323,102 @@
         border-radius: 10px;
     }
 
+    .close-reveal-modal {
+        font-size: 22px;
+        line-height: .5;
+        position: absolute;
+        top: 8px;
+        right: 11px;
+        color: #aaa;
+        text-shadow: 0 -1px 1px rbga(0,0,0,.6);
+        font-weight: bold;
+        cursor: pointer;
+    }
 
-    main .close-reveal-modal {
-    font-size: 22px;
-    line-height: .5;
-    position: absolute;
-    top: 8px;
-    right: 11px;
-    color: #aaa;
-    text-shadow: 0 -1px 1px rbga(0,0,0,.6);
-    font-weight: bold;
-    cursor: pointer;
-}
-.reveal-modal-bg {
-    position: fixed;
-    height: 100%;
-    width: 100%;
-    background: #000;
-    background: rgba(0,0,0,.8);
-    z-index: 100;
-    display: none;
-    top: 0;
-    left: 0;
-}
+    .reveal-modal-bg {
+        position: fixed;
+        height: 100%;
+        width: 100%;
+        background: #000;
+        background: rgba(0,0,0,.8);
+        z-index: 100;
+        display: none;
+        top: 0;
+        left: 0;
+    }
 
-    main .container {
-        margin-top: 50px;
-        float: left;
-        margin-left: 85px;
-        width: 70%;
-        align-items: center;
+     main ul li {
+        color: #000;
+        list-style: square inside;
+        font-size: 18px;
         display: block;
-        flex: 1;
-        margin-bottom:20px;
     }
 
-    .points {
-        display: block;
-        width: 1200px;
-    }
+/* для выплывающего меню в налогах и гос рег */
 
-    .container {
-        display: block;
-        flex: 1;
-        margin-bottom:20px;
-    }
-
-    .btn-primary {
-        color: #fff;
-        background-color: #6A5ACD;
-        border-color: #6A5ACD;
-        text-align: center;
-    }
-
-    .col-md-8 {
-        padding-left:0;
-    }
-
-    li {
-     display: block;
-     transition-duration: 0.5s;
-       color:#000;
+     li {
+         display: block;
+         transition-duration: 0.5s;
+         color:#000;
     }
 
     li:hover {
-      cursor: pointer;
-       color:#000;
+         cursor: pointer;
+         color:#000;
     }
 
     ul li ul {
-      visibility: hidden;
-      opacity: 0;
-      position: absolute;
-      transition: all 0.5s ease;
-      margin-top: 1rem;
-      left: 0;
-
-      display: none;
-       color:#000;
+          visibility: hidden;
+          opacity: 0;
+          position: absolute;
+          transition: all 0.5s ease;
+          margin-top: 1rem;
+          left: 0;
+          display: none;
+          color:#000;
     }
 
     ul li:hover > ul,
     ul li ul:hover {
-      visibility: visible;
-      opacity: 1;
-      display: block;
-         color:#000;
+          visibility: visible;
+          opacity: 1;
+          display: block;
+          color:#000;
     }
 
     ul li ul li {
-      clear: both;
-      width: 100%;
-        color:#000;
+          clear: both;
+          width: 100%;
+          color:#000;
     }
 
     main div div a, .btn:hover {
         color: #000;
         text-decoration: none;
         transform: scale(1.05);
+    }
+
+/* для таблиц */
+
+    table {
+        font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+        font-size: 14px;
+        border-collapse: collapse;
+        text-align: center;
+    }
+    th, td:first-child {
+        background: #AFCDE7;
+        color: white;
+        padding: 10px 20px;
+    }
+    th, td {
+        border-style: solid;
+        border-width: 0 1px 1px 0;
+        border-color: white;
+    }
+    td {
+        background: #D8E6F3;
+    }
+    th:first-child, td:first-child {
+        text-align: left;
     }
