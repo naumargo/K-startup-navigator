@@ -1,33 +1,46 @@
 {% load static %}
 
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="ru">
+
 <head>
     <meta charset="UTF-8">
-    <title>{% block title%}{% endblock %}</title>
-    <link rel="stylesheet" href="{% static 'main/css/main.css' %}">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"/>
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
 </head>
-<body class="body1">
-    <aside>
+<body>
+<header>
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <div class="container-fluid">
+      <label for="nav-toggle" class="nav-toggle" onclick></label>
+
         <a href="{% url 'home' %}" class="stars">
-            <h5>Stars+</h5>
+            <h5 class = "h5stars">Stars+</h5>
         </a>
-        <hr>
-        <ul>
-            <a href="{% url 'home' %}"><li><i class="fas fa-home"></i> Главная</li></a>
-            <a href="{% url 'section1' %}"><li><i class="fas fa-shield-alt"></i> Государственная регистрация</li></a>
-            <a href="{% url 'section2' %}"><li><i class="fas fa-hand-holding-usd"></i> Налоги</li></a>
-            <a href="{% url 'section3' %}"><li><i class="fas fa-hammer"></i> Трудовые отношения</li></a>
-            <a href="{% url 'section4' %}"><li><i class="fas fa-handshake"></i> Договорные отношения</li></a>
-            <a href="{% url 'section5' %}"><li><i class="fas fa-laptop-code"></i> Создание сайта</li></a>
-            <a href="{% url 'section6' %}"><li><i class="fas fa-seedling"></i> Мой продукт</li></a>
-            <a href="{% url 'section7' %}"><li><i class="fas fa-balance-scale"></i> Правовая основа моей деятелньости</li></a>
-        </ul>
-    </aside>
-    <main>
-        {% block content%}{% endblock %}
-    </main>
+
+    </div>
+  </nav>
+</header>
+<main>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+
+<input type="checkbox" id="nav-toggle" hidden>
+<nav class = 'nav'>
+
+<ul>
+   <li><a href="{% url 'home' %}"><i class="fas fa-home"></i> Главная </a>
+   <li><a href="{% url 'section1' %}"><i class="fas fa-shield-alt"></i> Государственная регистрация</a>
+   <li><a href="{% url 'section2' %}"><i class="fas fa-hand-holding-usd"></i> Налоги</a>
+   <li><a href="#4"><i class="fas fa-hammer"></i> Трудовые отношения</a>
+   <li><a href="#5"><i class="fas fa-handshake"></i> Договорные отношения</a>
+   <li><a href="#6"><i class="fas fa-laptop-code"></i> Создание сайта</a>
+   <li><a href="#7"><i class="fas fa-seedling"></i>   Мой продукт</a>
+    <li><a href="#7"><i class="fas fa-balance-scale"></i> Правовая основа моей деятельности</a>
+</ul>
+{% block content%}{% endblock %}
+</nav>
+
+</main>
 </body>
 </html>
