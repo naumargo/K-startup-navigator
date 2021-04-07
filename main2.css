@@ -1,24 +1,22 @@
- /* для главной страницы */
-
-   .bg-light, p-5, rounded{
+    .bg-light, p-5, rounded{
          width:1000px;
          padding:0;
          margin-top: 150px;
          margin-bottom: 10px;
-         margin-left:-20px;
+         margin-left:-100px;
  }
    .container{
         display: block;
         margin-top: 10px;
         float: left;
-        margin-left:-10px;
+        margin-left:-100px;
         display: block;
         flex: 1;
         position:relative;
         left:0px;
         width:1000px;
         align:center;
-    }
+}
 
     .btn-primary {
         color: #fff;
@@ -50,7 +48,6 @@
         cursor: pointer;
         font-size: 1.2em;
         line-height: 1;
-        z-index: 2001;
         -webkit-transition: color .25s ease-in-out;
         -moz-transition: color .25s ease-in-out;
         transition: color .25s ease-in-out;
@@ -61,6 +58,7 @@
         text-decoration: none;
         font-size:50px;
         margin-top:100px;
+
     }
 
     .nav-toggle:hover {
@@ -71,6 +69,7 @@
     [id='nav-toggle'] {
         position: absolute;
         display: none;
+
     }
 
 /* для моб устройств */
@@ -129,6 +128,7 @@
         padding: 30px;
         margin-top:120px;
         list-style: none;
+        z-index: 2000;
     }
 
     .nav > ul > li {
@@ -142,6 +142,9 @@
         -moz-transition: opacity .5s .1s, -moz-transform .5s .1s;
         -ms-transition: opacity .5s .1s, -ms-transform .5s .1s;
         transition: opacity .5s .1s, transform .5s .1s;
+        background-color: #fff;
+        padding-right:10px;
+        padding-bottom:5px;
     }
 
     [id='nav-toggle']:checked ~ .nav > ul > li {
@@ -283,7 +286,7 @@
          padding:0;
          margin-top: 150px;
          margin-bottom: 10px;
-         margin-left:0px;
+         margin-left:-150px;
          align:center;
     }
 
@@ -356,7 +359,7 @@
 
 /* для выплывающего меню в налогах и гос рег */
 
-     li {
+    li {
          display: block;
          transition-duration: 0.5s;
          color:#000;
@@ -404,21 +407,25 @@
         font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
         font-size: 14px;
         border-collapse: collapse;
-        text-align: center;
+        text-align:left;
     }
-    th, td:first-child {
+    th, .d1{
         background: #AFCDE7;
         color: white;
         padding: 10px 20px;
+        text-align:center;
     }
+
     th, td {
         border-style: solid;
         border-width: 0 1px 1px 0;
         border-color: white;
+        padding: 10px 20px;
+        text-align:left;
     }
     td {
         background: #D8E6F3;
     }
-    th:first-child, td:first-child {
-        text-align: left;
+    th:first-child, .d1 {
+        text-align: center;
     }
