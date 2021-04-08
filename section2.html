@@ -5,7 +5,7 @@
 {% endblock %}
 
 {% block content%}
-<body style = "overflow-x: visible;">
+<body>
 <main class="container1">
 
     <section class="py-6 bg-gray-100">
@@ -15,12 +15,16 @@
                 <div class="border-0 h-100 shadow card"><a class="">
                     <div style="display:inline-block;max-width:100%;overflow:hidden;position:relative;box-sizing:border-box;margin:0">
                         <div style="box-sizing:border-box;display:block;max-width:100%">
-                            <img style="width:350px;display:block; align:center; height:200px; position:inherit;border-radius: 2%;" alt="" aria-hidden="true" role="presentation" src="/static/main/images/ooo.jpg">
                         </div><img class="img-fluid card-img-top" style="visibility: visible; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; border: none; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;" sizes="(max-width:576px) 100vw, 350px" srcset="/_next/image?url=%2Fcontent%2Fimg%2Fphoto%2Fphoto-1467987506553-8f3916508521.jpg&amp;w=1080&amp;q=75 1x, /_next/image?url=%2Fcontent%2Fimg%2Fphoto%2Fphoto-1467987506553-8f3916508521.jpg&amp;w=3840&amp;q=75 2x"></div>
                 </a><div class="card-body">
 
                     <p class="my-2 text-muted text-sm">
-                        <h3 class="card-title pricing-card-title">ООО</h3>
+                        <div class="box-top">
+                  <div class="box-icon"><i class="fas fa-user-friends"></i></div><br>
+                  <div class="box-header">
+                      <h5 class="box-h5">Налоги для ООО</h5>
+                  </div><br>
+                </div>
 
                     <nav role="navigation">
                           <ul>
@@ -48,11 +52,15 @@
                 <div class="border-0 h-100 shadow card"><a class="">
                     <div style="display:inline-block;max-width:100%;overflow:hidden;position:relative;box-sizing:border-box;margin:0">
                         <div style="box-sizing:border-box;display:block;max-width:100%">
-                            <img style="width:350px;display:block;height:200px;border-radius: 2%;" alt="" aria-hidden="true" role="presentation" src="/static/main/images/startup.jpg">
                         </div><img class="img-fluid card-img-top" style="visibility: visible; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; border: none; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;" sizes="(max-width:576px) 100vw, 350px" srcset="/_next/image?url=%2Fcontent%2Fimg%2Fphoto%2Fphoto-1467987506553-8f3916508521.jpg&amp;w=1080&amp;q=75 1x, /_next/image?url=%2Fcontent%2Fimg%2Fphoto%2Fphoto-1467987506553-8f3916508521.jpg&amp;w=3840&amp;q=75 2x"></div>
                 </a><div class="card-body">
                     <p class="my-2 text-muted text-sm">
-                    <h3 class="card-title pricing-card-title">ИП</h3>
+                    <div class="box-top">
+                  <div class="box-icon"><i class="fas fa-user-friends"></i></div><br>
+                  <div class="box-header">
+                      <h5 class="box-h5">Налоги для ИП</h5>
+                  </div><br>
+                </div>
 
                             <nav role="navigation">
                               <ul>
@@ -86,12 +94,16 @@
                 <div class="border-0 h-100 shadow card"><a class="">
                     <div style="display:inline-block;max-width:100%;overflow:hidden;position:relative;box-sizing:border-box;margin:0">
                         <div style="box-sizing:border-box;display:block;max-width:100%">
-                            <img style="width:350px;height:200px;display:block;border-radius: 2%;" alt="" aria-hidden="true" role="presentation" src="/static/main/images/self.jpg">
                         </div>
                         <img class="img-fluid card-img-top" style="visibility: visible; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; border: none; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"></div>
                 </a><div class="card-body">
                         <p class="my-2 text-muted text-sm">
-                            <h3 class="card-title pricing-card-title">Самозанятые</h3>
+                    <div class="box-top">
+                  <div class="box-icon"><i class="fas fa-user-friends"></i></div><br>
+                  <div class="box-header">
+                      <h5 class="box-h5">Налоги для самозанятых</h5>
+                  </div><br>
+                </div>
 
                     <nav role="navigation">
                               <ul>
@@ -138,17 +150,17 @@
                       <th>Налоговый период</th>
                   </tr>
                  <tr>
-                      <td>Налог на прибыль организации</td>
+                      <td class = 'd1'>Налог на прибыль организации</td>
                       <td>20%</td>
                       <td>Календарный год</td>
                  </tr>
                 <tr>
-                      <td>НДС</td>
+                      <td class = 'd1'>НДС</td>
                       <td>0, 10, 20%</td>
                       <td>Квартал</td>
                 </tr>
                 <tr>
-                      <td>Налог на имущество организаций</td>
+                      <td class = 'd1'>Налог на имущество организаций</td>
                       <td>До 2,2%</td>
                       <td>Календарный год</td>
                 </tr>
@@ -186,7 +198,7 @@
                       <th>Налоговый период</th>
                   </tr>
                  <tr>
-                      <td>УСН «Доходы» (налог с доходов, расходы при том не важны)</td>
+                      <td class = 'd1'>УСН «Доходы» (налог с доходов, расходы при том не важны)</td>
                       <td>6%</td>
                       <td>Календарный год</td>
                  </tr>
@@ -194,7 +206,7 @@
                 <td>ИЛИ</td>
                  </tr>
                 <tr>
-                <td>УСН «Доходы минус расходы» (налог с доходов, уменьшенных на величину расходов)</td>
+                <td class = 'd1'>УСН «Доходы минус расходы» (налог с доходов, уменьшенных на величину расходов)</td>
                       <td>15%</td>
                       <td>Календарный год</td>
                  </tr>
@@ -232,7 +244,7 @@
                       <th>Налоговый период</th>
                   </tr>
                  <tr>
-                      <td>ЕСХН (Разница между полученными доходами и доказанными обоснованными расходами)</td>
+                      <td class = 'd1'>ЕСХН (Разница между полученными доходами и доказанными обоснованными расходами)</td>
                       <td>6%</td>
                       <td>Календарный год</td>
                  </tr>
@@ -317,17 +329,17 @@
                       <th>Налоговый период</th>
                   </tr>
                  <tr>
-                      <td>НДФЛ (на доходы физических лиц)</td>
+                      <td class = 'd1'>НДФЛ (на доходы физических лиц)</td>
                       <td>13, 15%</td>
                       <td>Календарный год</td>
                  </tr>
                 <tr>
-                      <td>НДС</td>
+                      <td class = 'd1'>НДС</td>
                       <td>0, 10, 20%</td>
                       <td>Квартал</td>
                 </tr>
                 <tr>
-                      <td>Налог на имущество физического лица</td>
+                      <td class = 'd1'>Налог на имущество физического лица</td>
                       <td>2% от кадастровой стоимости</td>
                       <td>Календарный год</td>
                 </tr>
