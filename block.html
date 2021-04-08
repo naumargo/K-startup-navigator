@@ -11,37 +11,35 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
         </head>
     <body>
-<header>
-  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-    <div class="container-fluid">
-      <label for="nav-toggle" class="nav-toggle" onclick></label>
-        </div>
-              <a href="{% url 'home' %}" class="stars">
-            <h5 class = "h5stars">Stars+</h5>
-        </a>
-  </nav>
-</header>
+    <header>
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <div class="container-fluid">
+          <label for="nav-toggle" class="nav-toggle" onclick></label>
+            </div>
+                  <a href="{% url 'home' %}" class="stars">
+                <h5 class = "h5stars">Stars+</h5>
+            </a>
+      </nav>
+    </header>
 
     <input type="checkbox" id="nav-toggle" hidden>
     <nav class = 'nav' style="">
 
 <ul>
-   <li><a href="{% url 'home' %}"><i class="fas fa-home"></i> Главная </a>
-   <li><a href="{% url 'section1' %}"><i class="fas fa-shield-alt"></i> Государственная регистрация</a>
-   <li><a href="{% url 'section2' %}"><i class="fas fa-hand-holding-usd"></i> Налоги</a>
-   <li><a href="{% url 'section3' %}"><i class="fas fa-hammer"></i> Трудовые отношения</a>
-   <li><a href="#5"><i class="fas fa-handshake"></i> Договорные отношения</a>
-   <li><a href="#6"><i class="fas fa-laptop-code"></i> Создание сайта</a>
-   <li><a href="#7"><i class="fas fa-seedling"></i>   Ваш продукт</a>
-    <li><a href="#7"><i class="fas fa-balance-scale"></i> Правовая основа деятельности</a></li>
+    <li><a href="{% url 'home' %}"><i class="fas fa-home"></i> Главная </a></li>
+    <li><a href="{% url 'section1' %}"><i class="fas fa-shield-alt"></i> Государственная регистрация</a></li>
+    <li><a href="{% url 'section2' %}"><i class="fas fa-hand-holding-usd"></i> Налоги</a></li>
+    <li><a href="{% url 'section3' %}"><i class="fas fa-hammer"></i> Трудовые отношения</a></li>
+    <li><a href="#5"><i class="fas fa-handshake"></i> Договорные отношения</a></li>
+    <li><a href="#6"><i class="fas fa-laptop-code"></i> Создание сайта</a></li>
+    <li><a href="{% url 'section7' %}"><i class="fas fa-business-time"></i>   Ваш бизнес</a></li>
+    <li><a href="{% url 'section8' %}"><i class="fas fa-balance-scale"></i> Правовая основа деятельности</a></li>
 </ul>
 
     </nav>
-<main>
+    <main>
     <article>
 {% block content%}{% endblock %}
 
 </article>
 </main>
-</body>
-</html>
