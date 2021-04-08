@@ -1,0 +1,129 @@
+{% extends 'main/block.html' %}
+
+{% block title%}
+    Ваш продукт
+{% endblock %}
+
+{% block content%}
+<body>
+<main class="container1">
+
+    <section class="py-6 bg-gray-100 ">
+    <section><div class="mb-5 row ">
+        <div class = "row">
+            <div class="mb-4 hover-animate col-sm-6 col-lg-4 py-7">
+                <div class="border-0 h-100 shadow card"><a class="">
+                    <div style="display:inline-block;max-width:100%;overflow:hidden;position:relative;box-sizing:border-box;margin:0">
+                        <div style="box-sizing:border-box;display:block;max-width:100%">
+                        </div><img class="img-fluid card-img-top" style="visibility: visible; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; border: none; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;" sizes="(max-width:576px) 100vw, 350px" srcset="/_next/image?url=%2Fcontent%2Fimg%2Fphoto%2Fphoto-1467987506553-8f3916508521.jpg&amp;w=1080&amp;q=75 1x, /_next/image?url=%2Fcontent%2Fimg%2Fphoto%2Fphoto-1467987506553-8f3916508521.jpg&amp;w=3840&amp;q=75 2x"></div>
+                </a><div class="card-body">
+
+                    <p class="my-2 text-muted text-sm">
+                    <div class="box-top">
+                  <div class="box-icon"><i class="fas fa-clipboard-check fas1"></i></div><br>
+                  <div class="box-header">
+                      <h5 class="box-h5">Требования</h5>
+                  </div><br>
+                </div>
+
+                    <nav role="navigation">
+                                <ul>
+                                    <a href="#okno1"><li>Какие требования предъявляются к товару (услуге, работе)?</a></li>
+                              </ul>
+                        </nav>
+                    </p>
+                </div>
+                </div>
+            </div>
+
+                    <div class="mb-4 hover-animate col-sm-6 col-lg-4 py-7">
+                <div class="border-0 h-100 shadow card"><a class="">
+                    <div style="display:inline-block;max-width:100%;overflow:hidden;position:relative;box-sizing:border-box;margin:0">
+                        <div style="box-sizing:border-box;display:block;max-width:100%">
+                        </div><img class="img-fluid card-img-top" style="visibility: visible; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; border: none; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;" sizes="(max-width:576px) 100vw, 350px" srcset="/_next/image?url=%2Fcontent%2Fimg%2Fphoto%2Fphoto-1467987506553-8f3916508521.jpg&amp;w=1080&amp;q=75 1x, /_next/image?url=%2Fcontent%2Fimg%2Fphoto%2Fphoto-1467987506553-8f3916508521.jpg&amp;w=3840&amp;q=75 2x"></div>
+                </a><div class="card-body">
+
+                    <p class="my-2 text-muted text-sm">
+                    <div class="box-top">
+                  <div class="box-icon"><i class="fas fa-hand-holding fas1"></i></div><br>
+                  <div class="box-header">
+                      <h5 class="box-h5">Ответственность</h5>
+                  </div><br>
+                </div>
+
+                    <nav role="navigation">
+                                <ul>
+                                    <a href="#okno2"><li>В каких случаях и в каком объёме  продавец несёт ответственность?</a></li>
+                              </ul>
+                        </nav>
+                    </p>
+                </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    </section>
+
+    <ul id="okno1" class="oko">
+        <div>
+            <p>
+            <h3>Какие требования предъявляются к товару (услуге, работе)?</h3><br>
+            <table>
+                <tr>
+                    <th>Требования</th>
+                    <th>Пояснения</th>
+                </tr>
+                <tr>
+                    <td>Товар (услуга, работа) должен быть <b>качественным</b> – соответствовать целевому назначению, техническим требованиям, быть безопасным.</td>
+                    <td>Если условия о качестве товара (работы, услуги) не оговорены, то Вы должны передать потребителю товар (выполнить работу, оказать услугу), соответствующий обычно предъявляемым требованиям и пригодный для целей, для которых товар (работа, услуга) такого рода обычно используется.</td>
+                </tr>
+                <tr>
+                    <td>На товар (работу) устанавливается  <b>срок службы</b> - период, в течение которого изготовитель (исполнитель) обязуется обеспечивать потребителю возможность использования товара (работы) по назначению и нести ответственность за существенные недостатки.</td>
+                    <td>Обязательно устанавливается в том случае, когда товар (работа) по истечении определенного периода могут:<ul>
+                            • Представлять опасность для жизни, здоровья потребителя <br>
+                            • Причинять вред его имуществу или окружающей среде</ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td>На товар (работу) устанавливается <b>срок годности</b>  - период времени, по истечении которого товар (работа) не пригоден для использования по назначению. </td>
+                    <td>Обязательно устанавливается на:<ul>
+                            • Продукты питания<br>
+                            • Парфюмерно-косметические товары<br>
+                            • Медикаменты<br>
+                            • Товары бытовой химии и иные подобные товары (работы)</ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td>На товар (работу) устанавливается <b>гарантийный срок</b> - период времени, в течение которого в случае обнаружения в товаре (работе)  недостатка изготовитель (исполнитель, продавец) обязаны удовлетворить требования потребителя о недостатках товара). </td>
+                    <td>В случае, если Вы не установили гарантийный срок на товар (работу), потребитель вправе предъявить к Вам требования о недостатках товара (работы), если такие недостатки товаров обнаружены в разумный срок, но в пределах двух лет со дня передачи их потребителю. Более длительные сроки могут устанавливаться законом или договором.</td>
+                </tr>
+            </table><br>
+            <p><span class = "span1">!</span>Важно помнить, что Вы должны своевременно предоставить потребителю необходимую и достоверную информацию о товарах (работах, услугах), обеспечивающую возможность их правильного выбора<span class = "span1">!</span><br>
+                <span class = "span1">!</span>Подробнее по <a href = "http://www.consultant.ru/document/cons_doc_LAW_305/e96b1cbe2a0795305a08c97b1a7f34ddab4ae908/">ссылке</a>.
+            </p>
+        </div>
+        <a class="close-reveal-modal" href = "#"><h1>×</h1></a>
+    </ul>
+
+    <ul id="okno2" class="oko">
+        <div>
+            <p>
+                <h3>В каких случаях и в каком объёме продавец несёт ответственность?</h3><br>
+
+                <p>За нарушение прав потребителей изготовитель (исполнитель, продавец, уполномоченная организация или уполномоченный индивидуальный предприниматель, импортер) несет ответственность, предусмотренную законом или договором. Нарушение прав потребителей может выражаться:<ul>
+                    <span class = "span2">• </span>В предоставлении неполной или недостоверной информации о товаре (работе, услуге)<br>
+                    <span class = "span2">• </span>В продаже товара ненадлежащего качества и т.п.</ul></p>
+                <p>Изготовитель (исполнитель, продавец, уполномоченная организация или уполномоченный индивидуальный предприниматель, импортёр) может нести ответственность в следующем объёме:<ul>
+                    <span class = "span2">• </span>Уплата неустойки (пени)<br>
+                    <span class = "span2">• </span>Возмещение убытков потребителя в полном объеме<br>
+                    <span class = "span2">• </span>Исполнение обязательства перед потребителем в натуре (уплата неустойки (пени) и возмещение убытков не освобождают изготовителя (исполнителя, продавца, уполномоченную организацию или уполномоченного индивидуального предпринимателя, импортера) от исполнения возложенных на него обязательств в натуре перед потребителем)</ul>
+                </p>
+            <span class = "span1">!</span> Подробнее по <a href = "http://www.consultant.ru/document/cons_doc_LAW_305/5311cc4c47a088e5ebc6a23b15f59fa70221f8ce/">ссылке</a>.
+            </p>
+        </div>
+        <a class="close-reveal-modal" href = "#"><h1>×</h1></a>
+        </ul>
+    </main>
+</body>
+{% endblock %}
