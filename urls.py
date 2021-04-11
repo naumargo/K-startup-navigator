@@ -1,8 +1,14 @@
 from django.urls import path, include
 from . import views
+from django.conf import settings
+from django.conf.urls.static import static
+from django.contrib import admin
+from main.views import ContactCreate, success
 
 urlpatterns = [
     path('', views.index, name='home'),
+    path('contact', ContactCreate.as_view(), name='contact_page'),
+    path('success/', success, name='success_page'),
     path('about-us', views.about, name='about'),
     path('section1', views.section1, name='section1'),
     path('section2', views.section2, name='section2'),
