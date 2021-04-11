@@ -524,3 +524,23 @@
         color:#4169E1;
         font-size:30px;
     }
+
+/* для формы и кнопок к ней */
+
+    form{
+       max-width: 350px;
+       margin:  auto 0;
+       padding: 10px;
+    }
+
+    .btnform{
+       display: inline-block;
+       max-width:350px;
+       padding: 10px 20px;
+    }
+
+    .btnfeed{
+        position:absolute;
+        bottom:10px;
+        right:30px;
+    }
