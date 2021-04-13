@@ -544,3 +544,18 @@
         bottom:10px;
         right:30px;
     }
+
+    footer{
+        bottom:0px;
+        position:absolute;
+        z-index:1;
+        width:100%;
+    }
+
+    .container3{
+        margin-left:20px;
+    }
+
+    label {
+        display: none;
+    }
